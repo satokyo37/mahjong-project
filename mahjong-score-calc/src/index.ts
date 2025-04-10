@@ -16,7 +16,7 @@ const options:scoreOptions = {
     isTsumo : true,
 }
 
-function calcScoreByRule ({ rule, han, hu, isDealer }:scoreOptions): number {
+export function calcScoreByRule ({ rule, han, hu, isDealer }:scoreOptions): number {
     const basePoint = hu * 2 ** (2 + han);
     const multiplier = isDealer ? 6 : 4;
     const total = basePoint * multiplier;
