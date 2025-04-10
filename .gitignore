@@ -1,0 +1,21 @@
+# node_modules: パッケージ管理ツールnpm/yarnで生成される依存ファイル
+node_modules/
+
+# dist: Viteなどでビルドした最終出力物（人が書いたコードではない）
+dist/
+
+# .env: 環境変数ファイル（APIキーや秘密の情報が入ることがある）
+.env
+
+# OSやエディタが自動生成するファイル
+.DS_Store
+Thumbs.db
+
+# vscodeの個人設定
+.vscode/
+
+# キャッシュ系
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
