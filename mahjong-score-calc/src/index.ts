@@ -3,7 +3,6 @@ interface scoreOptions {
     han     : number;
     hu      : number;
     isDealer: boolean;
-    isTsumo : boolean;
 }
 
 type ruleType = 'unlimited' | 'withRoundingMangan' | 'strict';
@@ -12,8 +11,7 @@ const options:scoreOptions = {
     rule    : "unlimited",
     han     : 3,
     hu      : 40,
-    isDealer: true,
-    isTsumo : true,
+    isDealer: true
 }
 
 export function calcScoreByRule ({ rule, han, hu, isDealer }:scoreOptions): number {
